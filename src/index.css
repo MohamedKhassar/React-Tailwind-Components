@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 .violet {
-    @apply bg-violet-300 text-violet-950 rounded-lg duration-300 transition-colors !important;
-  }
-  
+  @apply bg-violet-300 text-violet-950 rounded-lg duration-300 transition-colors !important;
+}
+
+.side-item:hover .tooltip {
+  visibility: visible;
+}

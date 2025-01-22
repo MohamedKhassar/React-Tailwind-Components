@@ -24,7 +24,7 @@ const SideBar = () => {
         { title: "Help", selected: false, Icon: HiQuestionMarkCircle },
     ])
     return (
-        <div className="flex">
+        <div className="flex sticky left-0 w-full ">
             <div className={`${open ? "w-72" : "w-20"} px-5 h-screen bg-dark-purple relative transition-[width] duration-700 space-y-8`}>
                 <SideBarTrigger setOpen={setOpen} open={open} />
                 <ul className="relative">
@@ -39,9 +39,6 @@ const SideBar = () => {
                         </li>
                     ))}
                 </ul>
-            </div>
-            <div className="p-7 text-2xl font-semibold flex-1 h-screen">
-                <h1>Home page</h1>
             </div>
         </div>
     )

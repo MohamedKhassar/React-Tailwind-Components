@@ -8,7 +8,7 @@ import { BiSupport, BiUser } from "react-icons/bi"
 import { MdInventory } from "react-icons/md"
 import { FiBox, FiSettings } from "react-icons/fi"
 import { LiaMoneyBillWaveSolid } from "react-icons/lia"
-const SideBar = () => {
+const SideBar1 = () => {
     const [expanded, setExpanded] = useState(false)
     const [btnData, setBtnData] = useState([
         { id: 1, alert: true, selected: true, name: "dashboard", icon: LuLayoutGrid },
@@ -62,4 +62,4 @@ const SideBar = () => {
     )
 }
 
-export default SideBar
+export default SideBar1

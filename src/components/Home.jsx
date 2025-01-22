@@ -1,5 +1,6 @@
 import { FaIdCard } from "react-icons/fa"
 import { FiHome, FiSearch } from "react-icons/fi"
+import { TbLockOpenOff } from "react-icons/tb"
 import { Link } from "react-router-dom"
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
         { title: 'Home', path: '/', icon: FiHome },
         { title: 'search', path: '/search', icon: FiSearch },
         { title: 'card', path: '/card', icon: FaIdCard },
+        { title: 'switch', path: '/switch', icon: TbLockOpenOff },
     ]
     return (
         <ul className="space-x-5 flex items-center">

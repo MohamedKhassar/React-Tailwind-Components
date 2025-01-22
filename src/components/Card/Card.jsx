@@ -6,13 +6,6 @@ import { SlShare } from "react-icons/sl"
 const Card = () => {
     const cardData = [
         "https://images.pexels.com/photos/30309178/pexels-photo-30309178/free-photo-of-vibrant-parrot-perched-on-a-balcony-railing.jpeg",
-        "https://images.pexels.com/photos/17779696/pexels-photo-17779696/free-photo-of-grassland-over-lake.jpeg",
-        "https://images.pexels.com/photos/28034420/pexels-photo-28034420/free-photo-of-a-small-green-bird-sitting-on-a-branch.jpeg",
-        "https://images.pexels.com/photos/10885310/pexels-photo-10885310.jpeg",
-        "https://images.pexels.com/photos/30322719/pexels-photo-30322719/free-photo-of-swallowtail-butterfly-on-lavender-bloom.jpeg",
-        "https://images.pexels.com/photos/6249418/pexels-photo-6249418.jpeg",
-        "https://images.pexels.com/photos/6249418/pexels-photo-6249418.jpeg",
-        "https://images.pexels.com/photos/30320508/pexels-photo-30320508/free-photo-of-abstract-floral-blur-with-vibrant-iris-flowers.jpeg"
     ]
     return (
         <div className="flex flex-wrap items-start justify-between gap-7 m-7">

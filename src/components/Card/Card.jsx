@@ -15,7 +15,7 @@ const Card = () => {
         "https://images.pexels.com/photos/30320508/pexels-photo-30320508/free-photo-of-abstract-floral-blur-with-vibrant-iris-flowers.jpeg"
     ]
     return (
-        <div className="flex flex-wrap items-start justify-between m-7 space-y-4">
+        <div className="flex flex-wrap items-start justify-between gap-7 m-7">
             {cardData.map((card, i) =>
                 <ImageCard key={i} imgSrc={card}>
                     <h1 className="text-xl">Lorem ipsum</h1>

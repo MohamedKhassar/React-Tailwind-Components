@@ -24,8 +24,8 @@ const SideBar = () => {
         { title: "Help", selected: false, Icon: HiQuestionMarkCircle },
     ])
     return (
-        <div className="flex sticky left-0 w-full ">
-            <div className={`${open ? "w-72" : "w-20"} px-5 h-screen bg-dark-purple relative transition-[width] duration-700 space-y-8`}>
+        <div className="flex w-full rounded-lg overflow-hidden">
+            <div className={`${open ? "w-72" : "w-20"} px-5 h-full bg-dark-purple relative transition-[width] duration-700 space-y-8`}>
                 <SideBarTrigger setOpen={setOpen} open={open} />
                 <ul className="relative">
                     {menus.map((menu, i) => (

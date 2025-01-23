@@ -1,31 +1,31 @@
-import SideBar from "./components/SideBar2/SideBar"
-import Card from "./components/Card/Card"
-import Switch from "./components/Switch/Switch"
-import SideBar1 from "./components/SideBar1/SideBar1"
-import { RiSideBarFill } from "react-icons/ri"
-import { BiCard } from "react-icons/bi"
-import { AiFillSwitcher } from "react-icons/ai"
+import { Route, Routes } from 'react-router-dom'
+import HomeSideBar from "./components/HomeComponents/HomeSideBar"
+import HomeCard from "./components/HomeComponents/HomeCard"
+import HomeSwitch from "./components/HomeComponents/HomeSwitch"
+import HomeButton from "./components/HomeComponents/HomeButton"
+import HomeModal from "./components/HomeComponents/HomeModal"
+import HomeToast from "./components/HomeComponents/HomeToast"
+import Home from './Home'
 
 const App = () => {
+  const links = [
+    { link: "sidebar", Element: HomeSideBar },
+    { link: "card", Element: HomeCard },
+    { link: "switch", Element: HomeSwitch },
+    { link: "button", Element: HomeButton },
+    { link: "modal", Element: HomeModal },
+    { link: "toast", Element: HomeToast },
+  ]
   return (
-    <div className="space-y-20 my-6">
-      <div className="space-y-8">
-        <h1 className="text-5xl text-center flex justify-center items-center gap-8"><RiSideBarFill className="size-8 text-dark-purple" /> SideBar</h1>
-        <SideBar1 />
-        <hr className="border-black" />
-        <SideBar />
-        <hr className="border-black" />
-      </div>
-      <div className="space-y-8">
-        <h1 className="text-5xl text-center flex justify-center items-center gap-8"><BiCard /> Cards</h1>
-        <Card />
-        <hr className="border-black" />
-      </div>
-      <div className="space-y-8">
-        <h1 className="text-5xl text-center flex justify-center items-center gap-8"><AiFillSwitcher /> Switchs</h1>
-        <Switch />
-      </div>
-    </div>
+    <Routes>
+      <Route path='/' element={<Home />} />
+      {
+        links.map(({ link, Element }, i) => (
+          <Route key={i} path={link} element={<Element />} />
+        ))
+      }
+    </Routes>
   )
 }
+
 export default App

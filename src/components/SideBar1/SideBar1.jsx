@@ -33,7 +33,7 @@ const SideBar1 = () => {
     return (
 
         <div
-            className={`flex flex-col justify-between bg-white sticky left-0 rounded-md h-full ${!expanded ? "w-fit" : "w-96"}`}>
+            className={`flex flex-col justify-between bg-white rounded-md h-full ${!expanded ? "w-fit" : "w-96"}`}>
             <div>
                 <SideBarTitle expanded={expanded} setExpanded={setExpanded} />
                 <div className="px-4 space-y-2">
